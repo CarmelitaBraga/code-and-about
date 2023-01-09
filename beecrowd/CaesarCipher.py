@@ -54,7 +54,7 @@ def decrypt_data(data):
 option = input("(E)ncrypt data or (D)ecrypt data? ").upper()
 
 if option.startswith('E'):
-    phrase = input("Gimme a phrase for encryption: ")
+    phrase = input("Gimme a phrase for encryption: ").lower()
     option2 = input("Do you want to set a step? (Y)es or (N)o? ").upper()
     
     if option2.startswith("Y"):
@@ -66,7 +66,7 @@ if option.startswith('E'):
     print(cipher)
 
 elif option.startswith('D'):
-    phrase = input("Gimme a phrase for decryption: ")
+    phrase = input("Gimme a phrase for decryption: ").lower()
     cipher = decrypt_data(phrase)
     print(cipher)
 
