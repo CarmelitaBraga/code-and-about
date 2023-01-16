@@ -4,5 +4,5 @@
 
 <br>
 
-<p>A brief repository for my coding problems' solutions throughout the time.</p>
-<i>🏃‍♀️ Can you spot my <strong>evolution </strong> through time?</i>
+<p>A brief repository for my coding problems' solutions throughout time.</p>
+<i>🏃‍♀️ Can you spot my <strong>evolution </strong>?</i>
