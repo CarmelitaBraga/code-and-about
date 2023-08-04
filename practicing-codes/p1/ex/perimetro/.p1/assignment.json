@@ -1,0 +1,26 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    200\n    300\n  output: |\n    O perímetro resultante (em cm) é 100.00.\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Perímetro de Retangulo\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5879938097872896,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5879938097872896,
+  "key": "5879938097872896",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    1330319498\n  output: |\n    15397\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Dias Unixtime\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6450591695896576,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6450591695896576,
+  "key": "6450591695896576",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

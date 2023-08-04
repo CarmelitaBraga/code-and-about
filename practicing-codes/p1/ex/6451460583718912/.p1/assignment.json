@@ -1,0 +1,26 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    Herbicida\n    30\n  output: |\n    9 Herbicida(s)\n    R$ 900.00\n\n- input: |\n    Fungicida\n    7\n  output: |\n    1 Fungicida(s)\n    R$ 320.00\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Defensivos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6451460583718912,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6451460583718912,
+  "key": "6451460583718912",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

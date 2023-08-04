@@ -1,0 +1,26 @@
+{
+  "dirname": "u4/{}",
+  "full_resource": {
+    "dirname": "u4/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    10\n    15 6 9 16 30 35\n  name: exemplo\n  output: |\n    1\n\n- input: |\n    5\n    15 9 8 7 35\n  name: exemplo2\n  output: |\n    2\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Vagões\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5807302550487040,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5807302550487040,
+  "key": "5807302550487040",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

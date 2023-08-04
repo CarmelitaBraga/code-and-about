@@ -1,0 +1,39 @@
+{
+  "dirname": "u4/{}",
+  "full_resource": {
+    "dirname": "u4/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    mandinga juazeiro cajueiro sequoia pirilampo\n  output: |\n    Quantidade de pentavogalicas: 3\n\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Pentavogalicas\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-07-13T00:36:44Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "2804:d49:6f05:4500:8a42:4b46:bd22:6912",
+        "_revision": 2,
+        "answer": true,
+        "category": "public",
+        "content": "palavras = str(input()).split()\n\ntotal = []\n\ndef all_vogais(word):\n    soma = 0\n    for e in word:\n        if e == 'a':\n            soma += 1\n        elif e == 'e':\n            soma += 1\n        elif e == 'i':\n            soma += 1\n        elif e == 'o':\n            soma += 1\n        elif e == 'u':\n            soma += 1\n\n    if soma >= 5:\n        return word\n\nfor palavra in palavras:\n    total += [all_vogais(palavra)]\n\n\ns = 0\nfor x in total:\n    if x != None:\n        s += 1\n\nprint(f'Quantidade de pentavogalicas: {s}')\n",
+        "hash": "e211b67e0fe38c1d28912ad4d25c2df90c3c83a8",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5103615108710400,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5103615108710400,
+  "key": "5103615108710400",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

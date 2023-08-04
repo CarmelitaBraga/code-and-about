@@ -1,0 +1,26 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    3\n    3.0\n    2.0\n    10.0\n  output: |\n    4.5\n    Aluno ainda não aprovado na unidade\n\n- input: |\n    2\n    6.0\n    6.0\n  output: |\n    6.0\n    Aluno aprovado na unidade\n\n- input: |\n    1\n    4.0\n  output: |\n    4.0\n    Aluno ainda não aprovado na unidade\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Status Unidade\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6007867758870528,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6007867758870528,
+  "key": "6007867758870528",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

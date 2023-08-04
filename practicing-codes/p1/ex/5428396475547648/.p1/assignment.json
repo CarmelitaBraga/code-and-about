@@ -1,0 +1,32 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nget_frequencia = getattr(undertest, 'get_frequencia', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        assert get_frequencia(['b','b','c','b', 'a']) == [3,1,1]\n     \n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Frequencia\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5428396475547648,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5428396475547648,
+  "key": "5428396475547648",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

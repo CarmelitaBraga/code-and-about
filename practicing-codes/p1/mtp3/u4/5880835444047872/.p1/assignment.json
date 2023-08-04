@@ -1,0 +1,26 @@
+{
+  "dirname": "u4/{}",
+  "full_resource": {
+    "dirname": "u4/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    85 45\n    35.0 40.0\n    -20 15\n    215 181\n  output: |\n    96.18cm\n    53.15cm\n    25.00cm\n    --\n    num disparos: 3\n    distancia media: 58.11cm\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Tiro ao Alvo\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5880835444047872,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5880835444047872,
+  "key": "5880835444047872",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

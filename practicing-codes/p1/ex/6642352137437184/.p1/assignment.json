@@ -1,0 +1,26 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    10\n    6\n    29\n    3\n    fim\n  output: |\n    12.00\n    1 10\n    2 6\n    4 3\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Abaixo da média\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6642352137437184,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6642352137437184,
+  "key": "6642352137437184",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,39 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    I 23ot th9 sheriff\n    oashtolate\n  output: |\n    I shot the sheriff\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Troca Coincidentes\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-07-12T20:17:39Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "2804:d49:6f05:4500:f0b3:1eb2:2b14:6f89",
+        "_revision": 3,
+        "answer": true,
+        "category": "public",
+        "content": "msg = str(input())\ntex = str(input())\n\ndef le_cod(cod, txt):\n    new = ''\n    for i in range(len(cod)):\n        if cod[i] == str(i):\n            new += txt[i]\n        else:\n            new += cod[i]\n\n    return new\n\n#print(le_cod(msg,tex))\n\nx = le_cod(msg, tex)\nprint(x)\n",
+        "hash": "1b684269a58ba2c2a2118afc093e4a334bb35936",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5477832287322112,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5477832287322112,
+  "key": "5477832287322112",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

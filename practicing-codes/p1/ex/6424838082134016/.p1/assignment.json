@@ -1,0 +1,26 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    2000.0,1,16,h1\n    4000.0,4,7,h2\n    1900.0,6,23,h3\n    1500.0,3,5,h4\n    8000.0,0,1,h5\n    ---\n    valor\n    tamanho\n    conforto\n    fim\n  output: |\n    h4\n    h3\n    h3\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Pesquisa Hotéis\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6424838082134016,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6424838082134016,
+  "key": "6424838082134016",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

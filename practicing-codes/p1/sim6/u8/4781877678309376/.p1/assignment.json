@@ -1,0 +1,26 @@
+{
+  "dirname": "u8/{}",
+  "full_resource": {
+    "dirname": "u8/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    p: -5 0 2 0 3\n    10\n    2\n    0\n    p: 3 1\n    100\n    8\n    fim\n  output: |\n    novo polinomio\n    30195\n    51\n    -5\n    novo polinomio\n    103\n    11\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Aplicação Polinômios\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4781877678309376,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 4781877678309376,
+  "key": "4781877678309376",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    Gilson 07 15 23 Sonia 07 10 47 Guadalupe 07 12 21\n  output: |\n    Sonia\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Quem Chegou Mais Cedo\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5550156248252416,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5550156248252416,
+  "key": "5550156248252416",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

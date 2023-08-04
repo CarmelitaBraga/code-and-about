@@ -1,0 +1,26 @@
+{
+  "dirname": "u3/{}",
+  "full_resource": {
+    "dirname": "u3/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    2020\n  output: |\n    2020 é bissexto\n\n- input: |\n    2011\n  output: |\n    2011 não é bissexto\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Ano Bissexto\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6361616062873600,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6361616062873600,
+  "key": "6361616062873600",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

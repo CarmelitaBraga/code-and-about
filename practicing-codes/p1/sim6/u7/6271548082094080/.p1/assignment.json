@@ -1,0 +1,32 @@
+{
+  "dirname": "u7/{}",
+  "full_resource": {
+    "dirname": "u7/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global idiff\n        undertest = __import__(module)\n        idiff = getattr(undertest, 'idiff', None)\n\n    def test_exemplo(self):\n        seq1 = [10, 20, 30, 40, 50, 60, 70]\n        seq2 = [10, 20, 20, 40, 80]\n        assert idiff(seq1, seq2) == [2, 4, 5, 6]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Diff índices\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6271548082094080,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6271548082094080,
+  "key": "6271548082094080",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": "u10/{}",
+  "full_resource": {
+    "dirname": "u10/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    20 cm 1 m\n    2 km 80 cm\n    0 cm 0 m\n  name: exemplo\n  output: |\n    1.20 m\n    2000.80 m\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Unidade de medida\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6197371111211008,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6197371111211008,
+  "key": "6197371111211008",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

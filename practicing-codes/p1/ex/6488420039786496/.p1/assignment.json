@@ -1,0 +1,39 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    6000\n    5\n  name: test_name\n  output: |\n    0.5 kWh\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Consumo Energia\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-07-29T03:39:35Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "189.105.27.140",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "potencia = int(input())\ntempo = int(input())\n\ntempo_seg = tempo * 60\nconsumo = tempo_seg / potencia\n\nprint(f'{consumo*10:.1f} kWh')\n",
+        "hash": "cbd025a7da30f3cd31ada9d2ad151f0e73456393",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 6488420039786496,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6488420039786496,
+  "key": "6488420039786496",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

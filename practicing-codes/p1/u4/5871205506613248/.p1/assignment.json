@@ -1,0 +1,26 @@
+{
+  "dirname": "u4/{}",
+  "full_resource": {
+    "dirname": "u4/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    Python\n  output: |\n    Pyth0n (1 troca(s))\n\n- input: |\n    ZENIT\n  output: |\n    Z3N1T (2 troca(s))\n\n- input: |\n    Abacateiro\n  output: |\n    Ab4c4t31r0 (5 troca(s))\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Converte Senha\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5871205506613248,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5871205506613248,
+  "key": "5871205506613248",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,39 @@
+{
+  "dirname": "u6/{}",
+  "full_resource": {
+    "dirname": "u6/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "from undertst import calcula_digitos_verificacao\n\ndef test_basico():\n    assert calcula_digitos_verificacao('153245875') == '40'\n",
+        "mode": "r",
+        "name": "test_public.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"test_public.py\",\n    \"test_acceptance.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"Dígitos de Verificação do CPF\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-06-20T20:34:24Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "177.75.78.66",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "def calcula_digitos_verificacao(cpf):\n    soma1 = 0\n    fator1 = 2\n    for num in range(8, -1, -1):\n        soma1 += fator1 * int(cpf[num])\n        fator1 += 1\n\n    total1 = (soma1*10)%11\n\n    # segunda parte\n\n    soma2 = 2 * total1\n    fator2 = 3\n    for nume in range(8, -1, -1):\n        soma2 += fator2 * int(cpf[nume])\n        fator2 += 1\n\n    total2 = (soma2*10)%11\n\n    return f'{total1}{total2}'\n",
+        "hash": "ca22415c7445de63c9e0b61efb98f339fd6fdfa7",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 6615811772907520,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6615811772907520,
+  "key": "6615811772907520",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

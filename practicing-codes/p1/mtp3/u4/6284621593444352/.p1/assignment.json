@@ -1,0 +1,26 @@
+{
+  "dirname": "u4/{}",
+  "full_resource": {
+    "dirname": "u4/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    América Botafogo Campinense Flamengo Grêmio Palmeiras\n    12 7 14 15 11 4\n    3\n    Botafogo 3x2 América\n    Campinense 3x1 Palmeiras\n    Flamengo 1x1 Grêmio\n  output: |\n    Líder: Campinense\n    Lanterna: Palmeiras\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Líder e Lanterna\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6284621593444352,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6284621593444352,
+  "key": "6284621593444352",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": "u5/{}",
+  "full_resource": {
+    "dirname": "u5/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    ......f.....f.\n    ffffffffffffff\n    ......f.....f.\n    ..ffffffff..f.\n    -\n  output: |\n    2 aluno(s) reprovado(s) por falta.\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Reprovados por falta\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4927200602095616,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 4927200602095616,
+  "key": "4927200602095616",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

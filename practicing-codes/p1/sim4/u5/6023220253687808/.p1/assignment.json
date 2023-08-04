@@ -1,0 +1,26 @@
+{
+  "dirname": "u5/{}",
+  "full_resource": {
+    "dirname": "u5/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    47\n  output: |\n    4\n    7\n    11\n    18\n    29\n    47\n    ---\n    47 é um repfigit.\n\n- input: |\n    23\n  output: |\n    2\n    3\n    5\n    8\n    13\n    21\n    ---\n    23 não é um repfigit.\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Repfigit\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6023220253687808,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6023220253687808,
+  "key": "6023220253687808",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

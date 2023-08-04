@@ -1,0 +1,26 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "from undertst import remove_caracteres\n\ndef test_exemplo():\n    frase = \"Apalavrados\"\n    assert remove_caracteres(frase, \"sodA\") == \"palavra\"\n",
+        "mode": "r",
+        "name": "test_public.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"test_public.py\",\n    \"test_acceptance.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"Remove Caracteres\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5312372778467328,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5312372778467328,
+  "key": "5312372778467328",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

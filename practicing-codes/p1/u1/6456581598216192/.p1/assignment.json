@@ -1,0 +1,39 @@
+{
+  "dirname": "u1/{}",
+  "full_resource": {
+    "dirname": "u1/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    2\n    5.0\n  name: exemplo\n  output: |\n    R$ 200.00\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Pintor\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-05-30T19:02:50Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "189.105.27.28",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "altura = int(input())\nlargura = float(input())\nconta = (altura*largura)*20\nprint(f'R$ {conta:.2f}')\n",
+        "hash": "ada63e9510c9762dfbcc66ecc69bfe7fbd0821cb",
+        "mode": "rw",
+        "name": "custo.py",
+        "op": "add"
+      }
+    ],
+    "iid": 6456581598216192,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6456581598216192,
+  "key": "6456581598216192",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

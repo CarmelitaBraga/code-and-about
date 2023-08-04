@@ -1,0 +1,23 @@
+- input: |
+    9876543210oigente
+    vdffbdb
+  output: |
+    9876543210oigente
+
+- input: |
+    01 3essoas
+    opio
+  output: |
+    op oessoas
+
+- input: |
+    a1
+    0:
+  output: |
+    a:
+
+- input: |
+    ''
+    ''
+  output: |
+    ''

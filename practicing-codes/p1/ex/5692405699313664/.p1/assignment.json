@@ -1,0 +1,26 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    220\n  output: |\n    Serão necessárias 0 página(s) para visualizar os tweets.\n    100.0% dos tweets serão perdidos.\n\n- input: |\n    440\n  output: |\n    Serão necessárias 1 página(s) para visualizar os tweets.\n    9.1% dos tweets serão perdidos.\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Tweets por Página\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5692405699313664,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5692405699313664,
+  "key": "5692405699313664",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,45 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    8\n    3\n    2\n    7\n    1\n    0\n    5\n    2\n    4\n  output: |\n    Menor número: 0\n    Maior número: 7\n    Média dos extremos: 3.50\n    5 número(s) abaixo da média\n    3 número(s) acima da média\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 24,\n      \"vhalstead\": 171.3,\n      \"header\": 3\n    }\n  ]\n}",
+        "mode": "r",
+        "name": "qcheck.json"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Média dos Extremos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-08-04T11:44:29Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "189.105.27.140",
+        "_revision": 2,
+        "answer": true,
+        "category": "public",
+        "content": "def acima_abaixo(lista, m):\n    acima = []\n    abaixo = []\n    for numero in lista:\n        if numero > m:\n            acima.append(numero)\n        elif numero < m:\n            abaixo.append(numero)\n\n    return acima, abaixo\n\n\ndef maior_menor(lista):\n    menor = lista[-1]\n    maior = lista[0]\n    for i in range(len(lista)):\n        if lista[i] > maior:\n            maior = lista[i]\n        if lista[i] < menor:\n            menor = lista[i]\n    return maior, menor\n\nN = int(input())\n\nnum_lista = []\nfor _ in range(N):\n    num = int(input())\n    num_lista.append(num)\n\nmaior, menor = maior_menor(num_lista)\nmedia = abs((maior + menor) / 2)\ncima, baixo = acima_abaixo(num_lista, media)\n\nprint(f'Menor número: {menor}')\nprint(f'Maior número: {maior}')\nprint(f'Média dos extremos: {media:.2f}')\nprint(f'{len(baixo)} número(s) abaixo da média')\nprint(f'{len(cima)} número(s) acima da média')\n",
+        "hash": "0202d8c17f17ed1d18e278b74ab33651c1dcec5e",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5312569529073664,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5312569529073664,
+  "key": "5312569529073664",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    cadastrar\n    022.222.333-99\n    Antoine\n    Posto 15\n    cadastrar\n    011.233.567.78\n    Josephine\n    Posto 1\n    finalizar\n  output: |\n    Usuário cadastrado com sucesso.\n    Usuário cadastrado com sucesso.\n\n- input: |\n    cadastrar\n    022.222.333-99\n    Antoine\n    Posto 15\n    consultar\n    022.222.333-99\n    finalizar\n  output: |\n    Usuário cadastrado com sucesso.\n    Nome: Antoine\n    CPF: 022.222.333-99\n    Saldo: 300.00\n\n- input: |\n    atualizar\n    022.222.333-80\n    Posto 15\n    finalizar\n  output: |\n    Usuário inexistente.\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Meu Posto\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5033424718921728,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5033424718921728,
+  "key": "5033424718921728",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

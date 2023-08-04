@@ -1,0 +1,39 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    40.0\n    20.0\n    100.0\n    10.0\n  output: |\n    6.0\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Consumo Gasolina MT1\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-07-20T21:50:39Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "189.105.27.140",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "pos_inicial = float(input())\ngasolina_inicial = float(input())\npos_final = float(input())\ngasolina_final = float(input())\n\ntotal = (pos_final - pos_inicial) / (gasolina_inicial - gasolina_final)\n\nprint(f'{total:.1f}')\n",
+        "hash": "0a12d8340ccb8f5809a6cb1dd7e0e095abf0f251",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5929046049292288,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5929046049292288,
+  "key": "5929046049292288",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

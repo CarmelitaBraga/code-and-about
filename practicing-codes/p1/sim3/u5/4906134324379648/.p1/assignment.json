@@ -1,0 +1,26 @@
+{
+  "dirname": "u5/{}",
+  "full_resource": {
+    "dirname": "u5/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    10\n    1 2 3 4\n    1 1 1 1 1\n    3 5 4\n    10 35\n    40 12\n  output: |\n    1 + 2 + 3 + 4 = 10\n    3 + 5 + 4 = 12\n    10 + 35 = 45\n    40 + 12 = 52\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Acima do Limite\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4906134324379648,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 4906134324379648,
+  "key": "4906134324379648",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

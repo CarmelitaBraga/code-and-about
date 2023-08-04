@@ -1,0 +1,23 @@
+- input: |
+    47
+  output: |
+    4
+    7
+    11
+    18
+    29
+    47
+    ---
+    47 é um repfigit.
+
+- input: |
+    23
+  output: |
+    2
+    3
+    5
+    8
+    13
+    21
+    ---
+    23 não é um repfigit.

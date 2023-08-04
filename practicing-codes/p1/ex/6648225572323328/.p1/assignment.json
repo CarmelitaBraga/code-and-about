@@ -1,0 +1,39 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "from undertst import eh_quadrado_magico\n    \ndef test_1():\n    assert eh_quadrado_magico([[2, 7, 6], [9, 5, 1], [4, 3, 8]])\n\ndef test_2():\n    assert not eh_quadrado_magico([[1, 2, 3], [4, 5, 6]])\n",
+        "mode": "r",
+        "name": "test_public.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"test_public.py\",\n    \"test_acceptance.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"É Quadrado Mágico?\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-08-23T18:12:05Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "189.105.27.140",
+        "_revision": 2,
+        "answer": true,
+        "category": "public",
+        "content": "def checa_repetidos(e, matriz):\n    soma = 0\n    for i in range(len(matriz)):\n        for j in range(len(matriz[i])):\n            if e == matriz[i][j]: \n                soma += 1\n    if soma > 1: return True \n    else: return False\n\n\ndef eh_quadrado_magico(quadrado):\n    n = len(quadrado)\n    \n    somafim = (n + (n**3))/2\n\n    # compara repetidos\n    for i in range(n):\n        for j in range(n):\n            if checa_repetidos(quadrado[i][j], quadrado): return False\n\n    # diagonal principal\n    soma = 0\n    for i in range(n):\n        soma += quadrado[i][i]\n    if soma != somafim: return False\n\n    # diagonal secundaria\n    soma = 0\n    for i in range(n):\n        soma += quadrado[i][-(i + 1)]\n    if soma != somafim: return False\n\n    # colunas\n    for j in range(n):\n        soma = 0\n        for i in range(n):\n            soma += quadrado[i][j]\n        if soma != somafim: return False\n\n    # linhas\n    for i in range(n):\n        soma = 0\n        for j in range(n):\n            soma += quadrado[i][j]\n        if soma != somafim: return False\n\n    return True\n",
+        "hash": "a05b475bf9f9779958b114b97d993e79b84f05e6",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 6648225572323328,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6648225572323328,
+  "key": "6648225572323328",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,51 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    América Botafogo Campinense Flamengo Grêmio Palmeiras\n    12 7 14 15 11 4\n    3\n    Botafogo 3x2 América\n    Campinense 3x1 Palmeiras\n    Flamengo 1x1 Grêmio\n  output: |\n    Líder: Campinense\n    Lanterna: Palmeiras\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Líder e Lanterna\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-07-11T13:54:46Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "2804:d49:6f05:4500:6993:322e:ade1:869c",
+        "_revision": 2,
+        "answer": true,
+        "category": "public",
+        "content": "times = str(input()).split()\npontos = str(input()).split()\n\njogos = int(input())\n\ndef conta_pontos(time1, re, time2):\n    r = re.split('x')\n    r[0] = int(r[0])\n    r[1] = int(r[1])\n    if r[0] > r[1]:\n        for i in range(len(times)):\n            if time1 == times[i]:\n                pontos[i] = str(int(pontos[i]) + 3)\n    elif r[0] < r[1]:\n        for i in range(len(times)):\n            if time2 == times[i]:\n                pontos[i] = str(int(pontos[i]) + 3)\n\n    elif r[0] == r[1]:\n        for i in range(len(times)):\n            if time1 == times[i]:\n                pontos[i] = str(int(pontos[i]) + 1)\n\n            if time2 == times[i]:\n                pontos[i] = str(int(pontos[i]) + 1)\n\n    \n    return times, pontos\n\n\nfor jogo in range(jogos):\n    t1, resul, t2 = str(input()).split()\n    x = conta_pontos(t1, resul, t2)\n\n\ndef define_pos(tms, pts):\n    maior = 0\n    menor = 0\n    lant = ''\n    venc = ''\n    for j in range(len(tms)):\n        pts[j] = int(pts[j])\n        if pts[j] > maior:\n            maior = pts[j]\n            venc = tms[j]\n        if pts[j] <= menor or j == 1:\n            menor = pts[j]\n            lant = tms[j]\n    \n    return lant, venc\n\np, v = define_pos(times, pontos)\n\nprint(f'Líder: {v}')\nprint(f'Lanterna: {p}')\n",
+        "hash": "07ace48f5d07245812315c3fdaed36cff68026be",
+        "mode": "rw",
+        "name": "solution_camp.py",
+        "op": "add"
+      },
+      {
+        "_at": "2022-07-11T13:53:46Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "2804:d49:6f05:4500:6993:322e:ade1:869c",
+        "_revision": 2,
+        "category": "public",
+        "content": "times = str(input()).split()\npontos = str(input()).split()\n\njogos = int(input())\n\ndef conta_pontos(time1, re, time2):\n    r = re.split('x')\n    r[0] = int(r[0])\n    r[1] = int(r[1])\n    if r[0] > r[1]:\n        for i in range(len(times)):\n            if time1 == times[i]:\n                pontos[i] = str(int(pontos[i]) + 3)\n    elif r[0] < r[1]:\n        for i in range(len(times)):\n            if time2 == times[i]:\n                pontos[i] = str(int(pontos[i]) + 3)\n\n    elif r[0] == r[1]:\n        for i in range(len(times)):\n            if time1 == times[i]:\n                pontos[i] = str(int(pontos[i]) + 1)\n\n            if time2 == times[i]:\n                pontos[i] = str(int(pontos[i]) + 1)\n\n    \n    return times, pontos\n\n\nfor jogo in range(jogos):\n    t1, resul, t2 = str(input()).split()\n    x = conta_pontos(t1, resul, t2)\n\n\ndef define_pos(tms, pts):\n    maior = 0\n    menor = 0\n    lant = ''\n    venc = ''\n    for j in range(len(tms)):\n        pts[j] = int(pts[j])\n        if pts[j] > maior:\n            maior = pts[j]\n            venc = tms[j]\n        if pts[j] <= menor or j == 1:\n            menor = pts[j]\n            lant = tms[j]\n    \n    return lant, venc\n\np, v = define_pos(times, pontos)\n\nprint(f'Líder: {v}')\nprint(f'Lanterna: {p}')\n",
+        "hash": "07ace48f5d07245812315c3fdaed36cff68026be",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5918710411821056,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5918710411821056,
+  "key": "5918710411821056",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,39 @@
+{
+  "dirname": "u6/{}",
+  "full_resource": {
+    "dirname": "u6/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "from undertst import maioridade_penal\n\ndef test_basico_1():\n    assert maioridade_penal(\"Jansen Italo Ana\", \"14 21 60\") == \"Italo Ana\"\n",
+        "mode": "r",
+        "name": "test_public.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"test_public.py\",\n    \"test_acceptance.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"Maioridade Penal Função\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-07-01T02:31:42Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "2804:d49:6f05:4500:1c9:3d98:5b30:87a9",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "def maioridade_penal(nomes, idades):\n    nomes = str(nomes).split()\n    idades = str(idades).split()\n\n    maiores = ''\n    for i in range(len(nomes)):\n        if int(idades[i]) >= 18:\n            maiores += nomes[i] + ' '\n\n    return maiores.strip()\n\n\n",
+        "hash": "0b87fdf3d2d07d608c15b2f7c5203c9b5cd27a51",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5049500903145472,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5049500903145472,
+  "key": "5049500903145472",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

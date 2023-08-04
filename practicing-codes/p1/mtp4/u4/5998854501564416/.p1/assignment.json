@@ -1,0 +1,39 @@
+{
+  "dirname": "u4/{}",
+  "full_resource": {
+    "dirname": "u4/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    dado empresa tatu\n  output: |\n    em ordem\n\n- input: |\n    casa dado abacate tatu\n  output: |\n    fora de ordem: 3\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Fora de Ordem\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-07-07T11:49:10Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "2804:d49:6f05:4500:d5b3:3ed8:a602:2c36",
+        "_revision": 3,
+        "answer": true,
+        "category": "public",
+        "content": "palavras = str(input()).split()\n\ndes = 0\nordem = 0\npos = 0\n\nfor i in range(len(palavras)):\n    if i == len(palavras)-1:\n        if palavras[-1] >= palavras[-2]:\n            ordem += 1\n            #em ordem\n        else:\n            des += 1\n            pos = len(palavras)-1\n    else:\n        if palavras[0] > palavras[1]:\n            pos = 0\n            des += 1\n            break\n        elif palavras[i+1] >= palavras[i]:\n            ordem += 1\n            #em ordem\n        else:\n            des += 1\n            pos = i + 1\n            break\n\nif des > 0:\n    print(f'fora de ordem: {pos+1}')\nelse:\n    print('em ordem')\n",
+        "hash": "b8f7743899d6daa4f7e31dfd337870923cc7df8c",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5998854501564416,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5998854501564416,
+  "key": "5998854501564416",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

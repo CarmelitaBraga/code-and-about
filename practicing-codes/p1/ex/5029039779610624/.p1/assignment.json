@@ -1,0 +1,51 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "import re\nfrom pathlib import Path\n\nimport pytest\n\nARQUIVO = \"questoes.txt\"\nRESPOSTAS = [\"str\", \"float\", \"1.5\", \"int\", \"1\", \"str\", \"2.02.0\", \"float\", \"4.0\"]\n\n@pytest.fixture\ndef texto():\n    try:\n        return open(ARQUIVO).read()\n    except:\n        return \"\"\n\n@pytest.fixture\ndef tem_token(texto):\n    def tem_token(token):\n        return re.search(r\"\\b\" + token + r\"\\b\", texto)\n    return tem_token\n\n@pytest.mark.parametrize(\"token\", RESPOSTAS)\ndef test_q1(token, tem_token):\n    assert tem_token(token)\n",
+        "mode": "ro",
+        "name": "test_.py"
+      },
+      {
+        "category": "public",
+        "content": "# Valor Resultante\n\n> Esta questão aborda avaliação de expressões. Você deve fazer o checkout,\n> responder as questões no arquivo baixado e fazer o commit das suas respostas.\n",
+        "mode": "ro",
+        "name": "README.md"
+      },
+      {
+        "category": "public",
+        "content": "Escreva o tipo e o valor associado às variáveis de cada programa abaixo:\n1. a = \"10 + 10\"\n2. b = 3 / 2\n3. c = 3 // 2\n4. d = 2 * \"2.0\"\n5. e = 16**(1/2)   \n",
+        "mode": "rw",
+        "name": "questoes.txt"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"extensions\": [\n    \".txt\"\n  ],\n  \"title\": \"Valor Resultante\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-05-16T14:42:52Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "189.105.27.28",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "Escreva o tipo e o valor associado às variáveis de cada programa abaixo:\n1. a = \"10 + 10\"\nstr '10 + 10'\n2. b = 3 / 2\nfloat 1.5\n3. c = 3 // 2\nint 1\n4. d = 2 * \"2.0\"\nstr '2.02.0'\n5. e = 16**(1/2)\nfloat 4.0\n",
+        "hash": "e7249893f829277c260bed32c9adf8166fb95ccb",
+        "mode": "rw",
+        "name": "questoes.txt",
+        "op": "add"
+      }
+    ],
+    "iid": 5029039779610624,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5029039779610624,
+  "key": "5029039779610624",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

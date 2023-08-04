@@ -1,0 +1,26 @@
+{
+  "dirname": "u1/{}",
+  "full_resource": {
+    "dirname": "u1/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    2.0\n    5.0\n    2.0\n  output: |\n    9.0\n\n- input: |\n    3.0\n    2.0\n    1.0\n  output: |\n    -8.0\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Delta\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5786755678601216,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5786755678601216,
+  "key": "5786755678601216",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

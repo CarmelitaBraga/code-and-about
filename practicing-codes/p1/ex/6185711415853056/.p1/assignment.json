@@ -1,0 +1,26 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    1\n  output: |\n    4.000000\n    2.666667\n    3.466667\n\n- input: |\n    0.1\n  output: |\n    4.000000\n    2.666667\n    3.466667\n    2.895238\n    3.339683\n    2.976046\n    3.283738\n    3.017072\n    3.252366\n    3.041840\n    3.232316\n    3.058403\n    3.218403\n    3.070255\n    3.208186\n    3.079153\n    3.200366\n    3.086080\n    3.194188\n    3.091624\n    3.189185\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Pi por Aproximações\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6185711415853056,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6185711415853056,
+  "key": "6185711415853056",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

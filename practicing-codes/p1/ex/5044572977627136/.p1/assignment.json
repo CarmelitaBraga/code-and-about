@@ -1,0 +1,26 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    3\n    5\n    1\n  output: |\n    a? b? c? -0.232\n    -1.434\n\n- input: |\n    3\n    2\n    4\n    2\n    4\n    3\n    0\n    3\n    5\n    3\n    5\n    1\n  output: |\n    a? b? c? equação inválida: tente novamente\n    a? b? c? equação inválida: tente novamente\n    a? b? c? equação inválida: tente novamente\n    a? b? c? -0.232\n    -1.434\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Equações Válidas\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5044572977627136,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5044572977627136,
+  "key": "5044572977627136",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

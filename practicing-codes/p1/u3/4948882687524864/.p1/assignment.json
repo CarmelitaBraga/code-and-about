@@ -1,0 +1,32 @@
+{
+  "dirname": "u3/{}",
+  "full_resource": {
+    "dirname": "u3/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    2\n    2\n    2\n  output: |\n    triangulo valido. 6\n\n- input: |\n    20\n    10\n    5\n  output: |\n    triangulo invalido.\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 103.61,\n      \"header\": 4\n    }\n  ]\n}",
+        "mode": "r",
+        "name": "qcheck.json"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"É triangulo\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4948882687524864,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 4948882687524864,
+  "key": "4948882687524864",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

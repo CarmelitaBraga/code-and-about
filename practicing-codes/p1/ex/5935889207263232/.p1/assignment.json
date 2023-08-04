@@ -1,0 +1,26 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "from undertst import diff_simetricos\n\ndef test_exemplo_1():\n    lista1 = [2, 5, 3, 9]\n    assert diff_simetricos(lista1) == [-7, 2]\n    assert lista1 == [2, 5, 3, 9]\n\ndef test_exemplo_2():\n    lista2 = [2, 5, 3, 9, 4]\n    assert diff_simetricos(lista2) == [-2, -4, 3]\n    assert lista2 == [2, 5, 3, 9, 4]\n",
+        "mode": "r",
+        "name": "test_public.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"test_public.py\",\n    \"test_acceptance.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"Diff Simétricos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5935889207263232,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5935889207263232,
+  "key": "5935889207263232",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,45 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    12344\n  output: |\n    00048\n\n- input: |\n    12221\n  output: |\n    00016\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "{\n  \"quality\": [\n    {\n      \"cc\": 1,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}",
+        "mode": "r",
+        "name": "qcheck.json"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Produto Posições\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-07-28T20:09:55Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "189.105.27.140",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "num = int(input())\nlista_num = []\n\ndef reverso(lista):\n    for i in range(len(lista) // 2):\n        lista[i], lista[-(i + 1)] = lista[-(i + 1)], lista[i]\n    return lista\n\n\nwhile num // 10 != 0:\n    x = num % 10\n    lista_num.append(x)\n    num = num // 10\n\nlista_num.append(num)\nnova_lista = reverso(lista_num)\n\nsoma_pares = nova_lista[0] + nova_lista[2] + nova_lista[4]\nsoma_impares = nova_lista[1] +  nova_lista[3]\n\nsomatorio = soma_pares * soma_impares\n\nprint(f'{somatorio:0>5}')\n",
+        "hash": "294297333803540fa723037103794a8b8526f91e",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 6139157862678528,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6139157862678528,
+  "key": "6139157862678528",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

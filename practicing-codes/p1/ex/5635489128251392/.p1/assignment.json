@@ -1,0 +1,39 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    15\n  output: |\n    10\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Múltiplos de 5\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-07-18T13:32:45Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "189.105.27.140",
+        "_revision": 2,
+        "answer": true,
+        "category": "public",
+        "content": "lim = int(input())\nnum = 0\nx = 0\n\nwhile num < lim:\n    num += 1\n    if num % 5 == 0 and num % 2 == 0:\n        x += 1\n        print(num)\n\nif x == 0:\n    print(0)\n",
+        "hash": "2f944ac3e8b762bc78cc25f4d4a6b576d0b92116",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5635489128251392,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5635489128251392,
+  "key": "5635489128251392",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,32 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsoma_moldura = getattr(undertest, 'soma_moldura', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        M = [[1,  2,  3,  4 ], [5,  6,  7,  8 ], [9,  10, 11, 12], [14, 15, 16, 17]]\n        assert soma_moldura(M, 0) == 106\n\n    def test_exemplo2(self):\n        M = [[1,  2,  3,  4 ], [5,  6,  7,  8 ], [9,  10, 11, 12], [14, 15, 16, 17]]\n        assert soma_moldura(M, 0) == 106\n        assert soma_moldura(M, 1) == 34\n     \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Soma Moldura k\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6472316609363968,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6472316609363968,
+  "key": "6472316609363968",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,24 @@
+- input: |
+    5
+    alimentacao,30
+    educacao,20
+    educacao,12
+    alimentacao,70
+    lazer,12
+    educacao
+  name: test_name
+  output: |
+    R$ 32
+
+- input: |
+    5
+    alimentacao,30
+    educacao,20
+    educacao,12
+    alimentacao,70
+    lazer,12
+    lazer
+  name: test_name
+  output: |
+    R$ 12
+

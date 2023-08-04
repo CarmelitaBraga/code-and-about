@@ -1,0 +1,32 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncoluna = getattr(undertest, 'coluna', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_1(self):\n        M = [[1,1,1,1],[2,2,2,2],[3,3,3,3]]\n        assert coluna(M,0) == [1,2,3]\n        assert coluna(M,1) == [1,2,3]\n        assert coluna(M,2) == [1,2,3]\n        assert coluna(M,3) == [1,2,3]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Coluna\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5507065659260928,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5507065659260928,
+  "key": "5507065659260928",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,50 @@
+{
+  "dirname": "u3/{}",
+  "full_resource": {
+    "dirname": "u3/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- script: echo .\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "print(\"responda no arquivo funcoes.md\")\n",
+        "mode": "ro",
+        "name": "sol.py"
+      },
+      {
+        "category": "public",
+        "content": "# Conceitos de Funções\n\nEstude o conceito de _função_ em Python. Crie o arquivo\n`funcoes.md` (use _markdown_ para escrevê-lo) e, nele,\nresponda às perguntas abaixo.\n\n1. O que é uma função?\n2. O que é uma função pura?\n3. O que são efeitos colaterais?\n4. O que é uma expressão de invocação de funções em Python?\n5. Explique o que é transparência referencial?\n6. Dê a sintaxe de definição de funções de Python.\n7. O que são parâmetros formais?\n8. Como se usa e para quê serve o comando `return`?\n\n> Esta questão não tem testes automáticos. Apenas faça\n> o commit do arquivo.\n",
+        "mode": "ro",
+        "name": "README.md"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"extensions\": [\n    \"funcoes.md\"\n  ],\n  \"title\": \"Conceitos de Funções\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-05-31T18:38:20Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "189.105.27.28",
+        "_revision": 1,
+        "category": "public",
+        "content": "Conceitos de funções\n\n1. O que é uma função?\nUm bloco de código que recebe valores e computa em novos resultados, por meio de funcionalidades específicas invocadas.\n\n2. O que é uma função pura?\nUma função que, recebendo os mesmos valores, vão produzir valores fixos correspondentes (e que não contém efeito colateral).\n\n3. O que são efeitos colaterais?\nUma função tem efeito colateral se sua execução altera dados na memória; ou se lê dados na entrada ou escreve dados na saída. \n\n\n4. O que é uma expressão de invocação de funções em Python?\nUma expressão que tem um valor associado quando invocada. Os () são os operadores e dentro deles colocamos os 'argumentos'.Conceitos de funções\n\n\n5. Explique o que é transparência referencial?\nO determinismo esperado em funções puras, indisponível nas não puras, em decorrência das modificações intrínsecas a certas funcionalidades. A transparência referencial garante que um valor, ainda que escrito de formas diferentes, resultará nele mesmo.\n\n\n6. Dê a sintaxe de definição de funções de Python.\ndef <nome da função>():\n\n\n7. O que são parâmetros formais?\nSão os nomes simbólicos usados na definição dos parâmetros de um subalgoritmo.\n\n\n8. Como se usa e para quê serve o comando return? \nPara \"retornar\" um determinado comando uma vez que outro foi inserido. Usado no final de uma função, e que, quando executado, ele para a função e retorna o valor.\n\n\n",
+        "hash": "e6d7746234bf76b528f51244dee6bdd32ca03add",
+        "mode": "rw",
+        "name": "funcoess.md",
+        "op": "add"
+      }
+    ],
+    "iid": 5842621022863360,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5842621022863360,
+  "key": "5842621022863360",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

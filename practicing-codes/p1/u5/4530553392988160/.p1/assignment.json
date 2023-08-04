@@ -1,0 +1,26 @@
+{
+  "dirname": "u5/{}",
+  "full_resource": {
+    "dirname": "u5/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    Mouse\n    casa\n    exemplo\n    Outra\n    lapis\n  output: |\n    3\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Mais Consoantes\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4530553392988160,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 4530553392988160,
+  "key": "4530553392988160",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

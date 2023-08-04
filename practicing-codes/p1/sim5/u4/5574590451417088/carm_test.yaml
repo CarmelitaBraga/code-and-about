@@ -1,0 +1,40 @@
+- input: |
+    2
+    canal
+    assuncao
+  output: |
+    1 palavra(s) com letras dobradas:
+    assuncao
+    ---
+    1 palavra(s) sem letras dobradas:
+    canal
+
+- input: |
+    4
+    ouro
+    otomano
+    premiacao
+    torquato
+  output: |
+    0 palavra(s) com letras dobradas:
+    ---
+    4 palavra(s) sem letras dobradas:
+    ouro
+    otomano
+    premiacao
+    torquato
+
+- input: |
+    0
+  output: |
+    0 palavra(s) com letras dobradas:
+    ---
+    0 palavra(s) sem letras dobradas:
+
+- input: |
+    1
+    poodle
+  output:
+    1 palavra(s) com letras dobradas:
+    ---
+    0 palavra(s) sem letras dobradas:

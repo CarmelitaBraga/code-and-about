@@ -1,0 +1,51 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "import re\nfrom pathlib import Path\n\nimport pytest\n\nARQUIVO = \"questoes.txt\"\nRESPOSTAS = [\"pwd\", \"PATH\", \"PS1\", \"exit\", \"id\", \"ps\", \"echo\", \"pip\"]\n\n@pytest.fixture\ndef texto():\n    try:\n        return open(ARQUIVO).read()\n    except:\n        return \"\"\n\n@pytest.fixture\ndef tem_token(texto):\n    def tem_token(token):\n        return re.search(r\"\\b\" + token + r\"\\b\", texto)\n    return tem_token\n\n@pytest.mark.parametrize(\"token\", RESPOSTAS)\ndef test_q1(token, tem_token):\n    assert tem_token(token)\n\ndef test_q2(texto):\n    assert re.search(r\"/home/.*/p1\", texto)\n\ndef test_q3(texto):\n    assert re.search(r\".local/bin\", texto)\n",
+        "mode": "ro",
+        "name": "test_.py"
+      },
+      {
+        "category": "public",
+        "content": "# Uso do terminal\n\n> Esta questão é semelhante à de _Checkout e Commit_. A única\n> diferença é que não contém a orientação detalhada. Siga o mesmo\n> processo para fazê-la. Se for o caso, consulte a outra\n> atividade, para lembrar os passos. Um detalhe apenas: o `p1\n> login` não é mais necessário por algum tempo. Quando for\n> necessário, o comando `p1` informará que você precisa fazer\n> novo `login`.\n\n",
+        "mode": "ro",
+        "name": "README.md"
+      },
+      {
+        "category": "public",
+        "content": "1. Qual o comando para imprimir o diretório corrente?\n2. Qual é a variável usada pelo shell para listar os diretórios em que deve buscar comandos?\n3. Qual a variável que controla o prompt?\n4. Qual o comando para sair do shell?\n5. Qual comando identifica o usuário?\n5. Qual comando lista os processos em execução?\n7. Qual comando \"imprime\" algo no terminal?\n8. Dê o caminho (pathname) completo do diretório desta atividade\n   em seu sistema de arquivos.\n9. Qual o comando de instalação de pacotes de Python?\n10. Em qual diretório o sistema de instalaçao de pacotes de\n    Python instala novos comandos?\n",
+        "mode": "rw",
+        "name": "questoes.txt"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"extensions\": [\n    \".txt\"\n  ],\n  \"title\": \"Uso do Terminal\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-05-12T12:26:22Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "150.165.42.156",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "1. Qual o comando para imprimir o diretório corrente?\n pwd\n2. Qual é a variável usada pelo shell para listar os diretórios em que deve buscar comandos?\n $PATH\n3. Qual a variável que controla o prompt?\n PS1\n4. Qual o comando para sair do shell?\n exit\n5. Qual comando identifica o usuário?\n id\n5. Qual comando lista os processos em execução?\n ps\n7. Qual comando \"imprime\" algo no terminal?\n echo\n8. Dê o caminho (pathname) completo do diretório desta atividade\n   em seu sistema de arquivos.\n /home/carmelita.medeiros/p1/u1/6407979697963008\n9. Qual o comando de instalação de pacotes de Python?\n pip\n10. Em qual diretório o sistema de instalaçao de pacotes de\n    Python instala novos comandos?\n /.local/bin\n",
+        "hash": "bd52e7138800a3caac65b58715eac68c5702ef47",
+        "mode": "rw",
+        "name": "questoes.txt",
+        "op": "add"
+      }
+    ],
+    "iid": 6407979697963008,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6407979697963008,
+  "key": "6407979697963008",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

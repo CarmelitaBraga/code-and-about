@@ -1,0 +1,26 @@
+{
+  "dirname": "u5/{}",
+  "full_resource": {
+    "dirname": "u5/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    123\n  output: |\n    3\n    2\n    1\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Dígito por dígito\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5569895750172672,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5569895750172672,
+  "key": "5569895750172672",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

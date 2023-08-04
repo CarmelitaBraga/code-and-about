@@ -1,0 +1,39 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    5\n    alimentacao,30\n    educacao,20\n    educacao,12\n    alimentacao,70\n    lazer,12\n    educacao\n  name: test_name\n  output: |\n    R$ 32\n\n- input: |\n    5\n    alimentacao,30\n    educacao,20\n    educacao,12\n    alimentacao,70\n    lazer,12\n    lazer\n  name: test_name\n  output: |\n    R$ 12\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Resumo Despesas\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-08-21T13:31:55Z",
+        "_author": "carmelita.medeiros@ccc.ufcg.edu.br",
+        "_ip": "189.105.27.140",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "def acha_e_calcula(categoria, categorias, valores):\n    gasto_total = 0\n    for i in range(len(categorias)):\n        if categoria == categorias[i]:\n            gasto_total += valores[i]\n    return gasto_total\n\n\nN = int(input())\n\ngastos = []\nvalores = []\nfor _ in range(N):\n    categoria, valor = input().split(',')\n    gastos.append(categoria)\n    valores.append(int(valor))\n\ninfo = input()\n\nfor e in gastos:\n    if info == e:\n        gasto = acha_e_calcula(e, gastos, valores)\n\nprint(f'R$ {gasto}')\n",
+        "hash": "a34da36d9d43553a8af2db6bb7cd95e48b83ef07",
+        "mode": "rw",
+        "name": "solution.py",
+        "op": "add"
+      }
+    ],
+    "iid": 6434945830486016,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 6434945830486016,
+  "key": "6434945830486016",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    15.0\n    9\n  name: exemplo\n  output: |\n    hipotenusa? cateto? hipotenusa: 15.00\n    cateto 1: 9.00\n    cateto 2: 12.00\n\n- input: |\n    13.0\n    12.0\n  name: exemplo\n  output: |\n    hipotenusa? cateto? hipotenusa: 13.00\n    cateto 1: 12.00\n    cateto 2: 5.00\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Cateto\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5327770458521600,
+    "index": null,
+    "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+  },
+  "iid": 5327770458521600,
+  "key": "5327770458521600",
+  "site": "prog1",
+  "user": "carmelita.medeiros@ccc.ufcg.edu.br"
+}
