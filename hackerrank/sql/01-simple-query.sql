@@ -32,3 +32,9 @@ where city like '%a' or
       city like '%i' or 
       city like '%o' or 
       city like '%u';
+
+select distinct city from station 
+where upper(left(city, 1)) in ('A', 'E', 'I', 'O', 'U') and 
+      upper(right(city, 1)) in ('A', 'E', 'I', 'O', 'U');
+
+select distinct city from station where upper(left(city, 1)) not in ('A', 'E', 'I', 'O', 'U');
