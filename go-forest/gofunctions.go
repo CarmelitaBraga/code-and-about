@@ -8,21 +8,24 @@ import (
 
 func main() {
 	welcome()
-	menu()
 
-	choice := choiceService()
+	for {
+		menu()
+		choice := choiceService()
 
-	switch choice {
-	case 1:
-		monitor()
-	case 2:
-		fmt.Println("Logs...")
-	case 0:
-		fmt.Println("Exiting...")
-		os.Exit(0)
-	default:
-		fmt.Println("This is not valid!")
-		main()
+		switch choice {
+		case 1:
+			monitor()
+		case 2:
+			fmt.Println("Logs...")
+		case 0:
+			fmt.Println("Exiting...")
+			os.Exit(0)
+		default:
+			fmt.Println("This is not valid!")
+			os.Exit(-1)
+			// main()
+		}
 	}
 
 	os.Exit(0)
@@ -52,5 +55,10 @@ func monitor() {
 	fmt.Println("Starting...")
 	site := "https://www.louvre.fr/"
 	response, _ := http.Get(site)
-	fmt.Println(response)
+	statusCode := response.StatusCode
+	if statusCode == 200 {
+		fmt.Println(site, "website was successfully pinged!")
+	} else {
+		fmt.Println("Something's wrong with", site, "website. Status code:", statusCode)
+	}
 }
