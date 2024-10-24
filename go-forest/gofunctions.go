@@ -4,7 +4,11 @@ import (
 	"fmt"
 	"os"
 	"net/http"
+	"time"
 )
+
+const numPings = 10
+const delayValue = 1
 
 func main() {
 	welcome()
@@ -15,7 +19,15 @@ func main() {
 
 		switch choice {
 		case 1:
-			monitor()
+			fmt.Println("Starting monitoring...")
+			sites := getSitesSlice()
+			for j := 0; j < numPings; j++ {
+				for i := 0; i < len(sites); i++ {
+					monitorSite(sites[i])
+				}
+				fmt.Println("----------------------")
+				time.Sleep(delayValue * time.Minute)
+			}
 		case 2:
 			fmt.Println("Logs...")
 		case 0:
@@ -27,8 +39,6 @@ func main() {
 			// main()
 		}
 	}
-
-	os.Exit(0)
 }
 
 func welcome() {
@@ -51,9 +61,7 @@ func choiceService() int {
 	return choice
 }
 
-func monitor() {
-	fmt.Println("Starting...")
-	site := "https://www.louvre.fr/"
+func monitorSite(site string) {
 	response, _ := http.Get(site)
 	statusCode := response.StatusCode
 	if statusCode == 200 {
@@ -61,4 +69,25 @@ func monitor() {
 	} else {
 		fmt.Println("Something's wrong with", site, "website. Status code:", statusCode)
 	}
+}
+
+func getSitesArray() [4]string {
+	var sites [4]string
+	sites[0] = "https://www.nytimes.com/international/"
+	sites[1] = "https://www.zeit.de/index"
+	sites[2] = "https://www.lemonde.fr/"
+	sites[3] = "https://www.folha.uol.com.br/"
+
+	for i, site := range sites {
+		fmt.Println("On", i, "th position, is", site, "website.")
+	}
+
+	return sites
+}
+
+func getSitesSlice() []string {
+	sites := []string{"https://www.hackerrank.com/dashboard", "https://leetcode.com/u/CarmelitaBraga/"}
+	sites = append(sites, "https://youtube.com/")
+	sites = append(sites, "https://www.louvre.fr/")
+	return sites
 }
