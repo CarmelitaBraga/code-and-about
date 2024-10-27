@@ -15,12 +15,14 @@ func main() {
 
 	for {
 		menu()
+		getSitesFromFile("go-forest/sites.txt")
 		choice := choiceService()
 
 		switch choice {
 		case 1:
 			fmt.Println("Starting monitoring...")
 			sites := getSitesSlice()
+			// sites := getSitesFromFile("sites.txt")
 			for j := 0; j < numPings; j++ {
 				for i := 0; i < len(sites); i++ {
 					monitorSite(sites[i])
@@ -62,7 +64,12 @@ func choiceService() int {
 }
 
 func monitorSite(site string) {
-	response, _ := http.Get(site)
+	response, err := http.Get(site)
+
+	if err != nil {
+		fmt.Println("An error has occurred:", err)
+	}
+
 	statusCode := response.StatusCode
 	if statusCode == 200 {
 		fmt.Println(site, "website was successfully pinged!")
@@ -90,4 +97,16 @@ func getSitesSlice() []string {
 	sites = append(sites, "https://youtube.com/")
 	sites = append(sites, "https://www.louvre.fr/")
 	return sites
+}
+
+func getSitesFromFile(filename string) []string {
+	file, err := os.Open(filename)
+
+	if err != nil {
+		fmt.Println("An error has occurred", err)
+	}
+
+	fmt.Println(file)
+	return []string{}
+	// return file
 }
