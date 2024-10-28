@@ -1,28 +1,32 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"os"
+	"io"
 	"net/http"
+	"os"
+	"strings"
 	"time"
 )
 
 const numPings = 10
 const delayValue = 1
+const filename = "go-forest/sites.txt"
 
 func main() {
 	welcome()
 
 	for {
 		menu()
-		getSitesFromFile("go-forest/sites.txt")
+		getFileContent(filename)
 		choice := choiceService()
 
 		switch choice {
 		case 1:
 			fmt.Println("Starting monitoring...")
-			sites := getSitesSlice()
-			// sites := getSitesFromFile("sites.txt")
+			// sites := getSitesSlice()
+			sites := getSitesFromFile(filename)
 			for j := 0; j < numPings; j++ {
 				for i := 0; i < len(sites); i++ {
 					monitorSite(sites[i])
@@ -106,7 +110,31 @@ func getSitesFromFile(filename string) []string {
 		fmt.Println("An error has occurred", err)
 	}
 
-	fmt.Println(file)
-	return []string{}
-	// return file
+	reader := bufio.NewReader(file)
+	sites := []string{}
+
+	for {
+		line, err := reader.ReadString('\n')
+		line = strings.TrimSpace(line)
+
+		sites = append(sites, line)
+
+		if err == io.EOF {
+			break
+		}
+	}
+
+	file.Close()
+	return sites
+}
+
+func getFileContent(filename string) {
+	file, err := os.ReadFile(filename)
+
+	if err != nil {
+		fmt.Println("An error occurred:", err)
+		return
+	}
+
+	fmt.Println(string(file))
 }
