@@ -75,11 +75,15 @@ func monitorSite(site string) {
 	}
 
 	statusCode := response.StatusCode
+	active := false
 	if statusCode == 200 {
 		fmt.Println(site, "website was successfully pinged!")
+		active = true
 	} else {
 		fmt.Println("Something's wrong with", site, "website. Status code:", statusCode)
 	}
+
+	logsRegister(site, active)
 }
 
 func getSitesArray() [4]string {
@@ -137,4 +141,25 @@ func getFileContent(filename string) {
 	}
 
 	fmt.Println(string(file))
+}
+
+func logsRegister(site string, active bool) {
+	var status string
+	if active {
+		status = "active"
+	} else {
+		status = "down"
+	}
+
+	timestamp := time.Now().UTC()
+
+	file, err := os.OpenFile("go-forest/logs.txt", os.O_RDWR | os.O_CREATE, 0666)
+
+	if err != nil {
+		fmt.Println("An error occurred:", err)
+	}
+
+	fmt.Println(file)
+
+	fmt.Println("At", timestamp, "\b, the site", site, "was", status, "\b!")
 }
