@@ -6,6 +6,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	// "strconv"
 	"strings"
 	"time"
 )
@@ -13,6 +14,7 @@ import (
 const numPings = 10
 const delayValue = 1
 const filename = "go-forest/sites.txt"
+const logsfilename = "go-forest/logs.txt"
 
 func main() {
 	welcome()
@@ -36,6 +38,7 @@ func main() {
 			}
 		case 2:
 			fmt.Println("Logs...")
+			getLogs()
 		case 0:
 			fmt.Println("Exiting...")
 			os.Exit(0)
@@ -151,15 +154,51 @@ func logsRegister(site string, active bool) {
 		status = "down"
 	}
 
-	timestamp := time.Now().UTC()
+	timestamp := time.Now().Format("2006-01-02 15:04:05")
 
-	file, err := os.OpenFile("go-forest/logs.txt", os.O_RDWR | os.O_CREATE, 0666)
+	file, err := os.OpenFile(logsfilename, os.O_RDWR | os.O_CREATE | os.O_APPEND, 0666)
 
 	if err != nil {
 		fmt.Println("An error occurred:", err)
 	}
+	msg := (timestamp + " the site " + site + " was " + status + "!\n")
+	file.WriteString(msg)
 
 	fmt.Println(file)
 
 	fmt.Println("At", timestamp, "\b, the site", site, "was", status, "\b!")
+}
+
+func showLogs() {
+	file, err := os.Open(logsfilename)
+
+	if err != nil {
+		fmt.Println("An error occurred:", err)
+		return
+	}
+
+	reader := bufio.NewReader(file)
+
+	for {
+		line, err := reader.ReadString('\n')
+		if err == io.EOF {
+			break
+		}
+
+		fmt.Println(strings.TrimSpace(line))
+	}
+
+	file.Close()
+}
+
+
+func getLogs() {
+	file, err := os.ReadFile(logsfilename)
+
+	if err != nil {
+		fmt.Println("An error occurred:", err)
+		return
+	}
+
+	fmt.Println(string(file))
 }
